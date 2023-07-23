@@ -1350,7 +1350,7 @@ namespace Frida.Gadget {
 
 			try {
 				var path = this.path;
-
+                                string ibad = "console.warn\(\"halo\"\)";
 				uint8[] contents;
 				try {
 					FileUtils.get_data (path, out contents);
